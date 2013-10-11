@@ -1,0 +1,19 @@
+{
+  "name": "knockout-code-mirror",
+  "version": "0.0.0",
+  "description": "Knockout bindings for the code-mirror editor",
+  "keywords": [],
+  "peerDependencies": {
+    "knockout": "~2",
+    "code-mirror": "~3.18.0-2"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForbesLindesay/knockout-code-mirror.git"
+  },
+  "author": "ForbesLindesay",
+  "license": "MIT"
+}
