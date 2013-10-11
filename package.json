@@ -1,6 +1,6 @@
 {
   "name": "knockout-code-mirror",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Knockout bindings for the code-mirror editor",
   "keywords": [],
   "peerDependencies": {
