@@ -32,6 +32,12 @@ function enableCM(defaults) {
           ko.unwrap(valueAccessor()).value = cm.getValue();
         }
       });
+      var subscription;
+      if (ko.isObservable(valueAccessor().value)) {
+        subscription = valueAccessor().value.subscribe(function () {
+          editor.setValue(valueAccessor().value());
+        });
+      }
       for (var i = 0; i < events['editor-created'].length; i++) {
         events['editor-created'][i](editor, element, options);
       }
@@ -49,6 +55,9 @@ function enableCM(defaults) {
           events['editor-disposed'][i](editor, element, options);
         }
         wrapperElement.remove();
+        if (subscription) {
+          subscription.dispose();
+        }
       });
     }
   };
