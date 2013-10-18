@@ -35,7 +35,8 @@ function enableCM(defaults) {
       var subscription;
       if (ko.isObservable(valueAccessor().value)) {
         subscription = valueAccessor().value.subscribe(function () {
-          editor.setValue(valueAccessor().value());
+          if (editor.getValue() !== valueAccessor().value())
+            editor.setValue(valueAccessor().value());
         });
       }
       for (var i = 0; i < events['editor-created'].length; i++) {
