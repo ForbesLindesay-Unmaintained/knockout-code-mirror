@@ -1,11 +1,11 @@
 {
   "name": "knockout-code-mirror",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Knockout bindings for the code-mirror editor",
   "keywords": [],
   "peerDependencies": {
     "knockout": "~2",
-    "code-mirror": "~3.18.0-2"
+    "code-mirror": "~3.19.0-1"
   },
   "scripts": {
     "test": "mocha -R spec"
