@@ -4,7 +4,7 @@
   "description": "Knockout bindings for the code-mirror editor",
   "keywords": [],
   "peerDependencies": {
-    "knockout": "~2",
+    "knockout": ">=2.0.0 <4.0.0",
     "code-mirror": "~3.19.0-1"
   },
   "scripts": {
