@@ -69,6 +69,7 @@ function enableCM(defaults) {
       if (events[name].indexOf(fn) === -1) {
         events[name].push(fn);
       }
+      return this;
     },
     off: function (name, fn) {
       if (name !== 'editor-created' && name !== 'editor-disposed') {
@@ -78,6 +79,7 @@ function enableCM(defaults) {
       events[name] = events[name].filter(function (f) {
         return f !== fn;
       })
+      return this;
     }
   }
 }
