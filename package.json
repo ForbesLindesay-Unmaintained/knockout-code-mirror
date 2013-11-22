@@ -5,7 +5,7 @@
   "keywords": [],
   "peerDependencies": {
     "knockout": ">=2.0.0 <4.0.0",
-    "code-mirror": "~3.19.0-1"
+    "code-mirror": ">=3.19.0-1 <4.0.0"
   },
   "scripts": {
     "test": "mocha -R spec"
