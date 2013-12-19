@@ -32,12 +32,17 @@ function enableCM(defaults) {
           ko.unwrap(valueAccessor()).value = cm.getValue();
         }
       });
-      var subscription;
+      var subscriptions = [];
       if (ko.isObservable(valueAccessor().value)) {
-        subscription = valueAccessor().value.subscribe(function () {
+        subscriptions.push(valueAccessor().value.subscribe(function () {
           if (editor.getValue() !== valueAccessor().value())
             editor.setValue(valueAccessor().value());
-        });
+        }));
+      }
+      if (ko.isObservable(valueAccessor().mode)) {
+        subscriptions.push(valueAccessor().mode.subscribe(function () {
+          editor.setOption('mode', valueAccessor().mode());
+        }));
       }
       for (var i = 0; i < events['editor-created'].length; i++) {
         events['editor-created'][i](editor, element, options);
@@ -56,8 +61,8 @@ function enableCM(defaults) {
           events['editor-disposed'][i](editor, element, options);
         }
         wrapperElement.remove();
-        if (subscription) {
-          subscription.dispose();
+        for (var i = 0; i < subscriptions.length; i++) {
+          subscriptions[i].dispose();
         }
       });
     }
