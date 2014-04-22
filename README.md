@@ -2,9 +2,9 @@
 
 Knockout bindings for the code-mirror editor
 
-[![Build Status](https://travis-ci.org/ForbesLindesay/knockout-code-mirror.png?branch=master)](https://travis-ci.org/ForbesLindesay/knockout-code-mirror)
-[![Dependency Status](https://gemnasium.com/ForbesLindesay/knockout-code-mirror.png)](https://gemnasium.com/ForbesLindesay/knockout-code-mirror)
-[![NPM version](https://badge.fury.io/js/knockout-code-mirror.png)](http://badge.fury.io/js/knockout-code-mirror)
+[![Build Status](https://img.shields.io/travis/ForbesLindesay/knockout-code-mirror/master.svg)](https://travis-ci.org/ForbesLindesay/knockout-code-mirror)
+[![Dependency Status](https://img.shields.io/gemnasium/ForbesLindesay/knockout-code-mirror.svg)](https://gemnasium.com/ForbesLindesay/knockout-code-mirror)
+[![NPM version](https://img.shields.io/npm/v/knockout-code-mirror.svg)](http://badge.fury.io/js/knockout-code-mirror)
 
 ## Installation
 
