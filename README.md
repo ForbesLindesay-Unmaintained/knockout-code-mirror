@@ -3,8 +3,8 @@
 Knockout bindings for the code-mirror editor
 
 [![Build Status](https://img.shields.io/travis/ForbesLindesay/knockout-code-mirror/master.svg)](https://travis-ci.org/ForbesLindesay/knockout-code-mirror)
-[![Dependency Status](https://img.shields.io/gemnasium/ForbesLindesay/knockout-code-mirror.svg)](https://gemnasium.com/ForbesLindesay/knockout-code-mirror)
-[![NPM version](https://img.shields.io/npm/v/knockout-code-mirror.svg)](http://badge.fury.io/js/knockout-code-mirror)
+[![Dependency Status](https://img.shields.io/david/ForbesLindesay/knockout-code-mirror.svg)](https://david-dm.org/ForbesLindesay/knockout-code-mirror)
+[![NPM version](https://img.shields.io/npm/v/knockout-code-mirror.svg)](https://www.npmjs.com/package/knockout-code-mirror)
 
 ## Installation
 
