@@ -1,5 +1,7 @@
 # knockout-code-mirror
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/knockout-code-mirror.svg)](https://greenkeeper.io/)
+
 Knockout bindings for the code-mirror editor
 
 [![Build Status](https://img.shields.io/travis/ForbesLindesay/knockout-code-mirror/master.svg)](https://travis-ci.org/ForbesLindesay/knockout-code-mirror)
